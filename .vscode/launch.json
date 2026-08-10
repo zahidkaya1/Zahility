@@ -1,0 +1,71 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "java",
+      "request": "launch",
+      "name": "Client",
+      "presentation": {
+        "group": "Mod Development - Special-Snowballs",
+        "order": 0
+      },
+      "projectName": "Special-Snowballs",
+      "mainClass": "net.neoforged.devlaunch.Main",
+      "args": [
+        "@C:\\Users\\mehme\\Special-Snowballs\\build\\moddev\\clientRunProgramArgs.txt"
+      ],
+      "vmArgs": [
+        "@C:\\Users\\mehme\\Special-Snowballs\\build\\moddev\\clientRunVmArgs.txt",
+        "-Dfml.modFolders\u003dspecialsnowballs%%C:\\Users\\mehme\\Special-Snowballs\\bin\\main"
+      ],
+      "cwd": "${workspaceFolder}\\run",
+      "env": {},
+      "console": "internalConsole",
+      "shortenCommandLine": "none"
+    },
+    {
+      "type": "java",
+      "request": "launch",
+      "name": "Data",
+      "presentation": {
+        "group": "Mod Development - Special-Snowballs",
+        "order": 1
+      },
+      "projectName": "Special-Snowballs",
+      "mainClass": "net.neoforged.devlaunch.Main",
+      "args": [
+        "@C:\\Users\\mehme\\Special-Snowballs\\build\\moddev\\dataRunProgramArgs.txt"
+      ],
+      "vmArgs": [
+        "@C:\\Users\\mehme\\Special-Snowballs\\build\\moddev\\dataRunVmArgs.txt",
+        "-Dfml.modFolders\u003dspecialsnowballs%%C:\\Users\\mehme\\Special-Snowballs\\bin\\main"
+      ],
+      "cwd": "${workspaceFolder}\\run",
+      "env": {},
+      "console": "internalConsole",
+      "shortenCommandLine": "none"
+    },
+    {
+      "type": "java",
+      "request": "launch",
+      "name": "Server",
+      "presentation": {
+        "group": "Mod Development - Special-Snowballs",
+        "order": 2
+      },
+      "projectName": "Special-Snowballs",
+      "mainClass": "net.neoforged.devlaunch.Main",
+      "args": [
+        "@C:\\Users\\mehme\\Special-Snowballs\\build\\moddev\\serverRunProgramArgs.txt"
+      ],
+      "vmArgs": [
+        "@C:\\Users\\mehme\\Special-Snowballs\\build\\moddev\\serverRunVmArgs.txt",
+        "-Dfml.modFolders\u003dspecialsnowballs%%C:\\Users\\mehme\\Special-Snowballs\\bin\\main"
+      ],
+      "cwd": "${workspaceFolder}\\run",
+      "env": {},
+      "console": "internalConsole",
+      "shortenCommandLine": "none"
+    }
+  ]
+}
