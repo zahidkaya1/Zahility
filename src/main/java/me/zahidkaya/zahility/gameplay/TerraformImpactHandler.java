@@ -1,7 +1,7 @@
-package me.zahidkaya.specialsnowballs.gameplay;
+package me.zahidkaya.zahility.gameplay;
 
-import me.zahidkaya.specialsnowballs.registry.ModBlockTags;
-import me.zahidkaya.specialsnowballs.registry.ModItems;
+import me.zahidkaya.zahility.registry.ModBlockTags;
+import me.zahidkaya.zahility.registry.ModItems;
 import net.minecraft.core.BlockPos;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.world.entity.projectile.Snowball;
@@ -32,7 +32,7 @@ public final class TerraformImpactHandler {
 
         if (projectileItem.is(ModItems.TERRAFORM_SNOWBALL.get())) {
             radius = SURVIVAL_RADIUS;
-        } else if (projectileItem.is(ModItems.CREATIVE_TERRAFORM_ORB.get())) {
+        } else if (projectileItem.is(ModItems.CREATIVE_TERRAFORM_SNOWBALL.get())) {
             radius = CREATIVE_RADIUS;
         } else {
             // Vanilla player snowballs, Snow Golem snowballs and snowballs from other mods are ignored.

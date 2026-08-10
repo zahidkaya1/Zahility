@@ -1,15 +1,15 @@
 # Natural Terraform Patch Kurulumu
 
-Bu patch mevcut Minecraft 1.21.1 + NeoForge Special Snowballs projesinin üzerine uygulanır.
+Bu patch mevcut Minecraft 1.21.1 + NeoForge Zahility projesinin Ã¼zerine uygulanÄ±r.
 
 ## Eklenenler
 
-- Terraform Snowball ve Creative Terraform Orb yalnızca `#specialsnowballs:terraformable_blocks` etiketindeki doğal blokları Dirt'e dönüştürür.
-- Survival yarıçapı: 3 blok.
-- Creative yarıçapı: 8 blok.
-- Normal oyuncu kar topları ve Snow Golem kar topları etkilenmez.
-- Terraform Snowball için ilk/prototip zor survival tarifi eklendi.
-- Creative Terraform Orb için tarif yoktur.
+- Terraform Snowball ve Creative Terraform Snowball yalnÄ±zca `#zahility:terraformable_blocks` etiketindeki doÄŸal bloklarÄ± Dirt'e dÃ¶nÃ¼ÅŸtÃ¼rÃ¼r.
+- Survival yarÄ±Ã§apÄ±: 3 blok.
+- Creative yarÄ±Ã§apÄ±: 8 blok.
+- Normal oyuncu kar toplarÄ± ve Snow Golem kar toplarÄ± etkilenmez.
+- Terraform Snowball iÃ§in ilk/prototip zor survival tarifi eklendi.
+- Creative Terraform Snowball iÃ§in tarif yoktur.
 
 ## Prototip tarif
 
@@ -23,18 +23,18 @@ E N E
 - D = Dragon's Breath (3)
 - S = Snowball (1)
 - N = Nether Star (1)
-- Sonuç = 16x Terraform Snowball
+- SonuÃ§ = 16x Terraform Snowball
 
-Bu tarif daha sonra dengeleme aşamasında değiştirilebilir.
+Bu tarif daha sonra dengeleme aÅŸamasÄ±nda deÄŸiÅŸtirilebilir.
 
 ## Kurulum
 
-ZIP'in içindekileri `C:\Users\mehme\Special-Snowballs` klasörünün üzerine kopyala.
+ZIP'in iÃ§indekileri `C:\Users\mehme\Zahility` klasÃ¶rÃ¼nÃ¼n Ã¼zerine kopyala.
 
-Ardından:
+ArdÄ±ndan:
 
 ```powershell
-cd C:\Users\mehme\Special-Snowballs
+cd C:\Users\mehme\Zahility
 .\gradlew.bat compileJava
 .\gradlew.bat runClient
 ```
@@ -42,9 +42,9 @@ cd C:\Users\mehme\Special-Snowballs
 ## Test
 
 ```
-/give @s specialsnowballs:terraform_snowball 16
-/give @s specialsnowballs:creative_terraform_orb 16
+/give @s zahility:terraform_snowball 16
+/give @s zahility:creative_terraform_snowball 16
 /give @s minecraft:snowball 16
 ```
 
-Terraform topları doğal blokları Dirt'e dönüştürmeli; vanilla kar topu hiçbir şeyi dönüştürmemeli.
+Terraform toplarÄ± doÄŸal bloklarÄ± Dirt'e dÃ¶nÃ¼ÅŸtÃ¼rmeli; vanilla kar topu hiÃ§bir ÅŸeyi dÃ¶nÃ¼ÅŸtÃ¼rmemeli.

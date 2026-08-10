@@ -3,23 +3,23 @@ loaderVersion="[1,)"
 license="All Rights Reserved"
 
 [[mods]]
-modId="specialsnowballs"
+modId="zahility"
 version="0.1.0"
-displayName="Special Snowballs"
+displayName="Zahility"
 authors="Mehmet Zahid Kaya"
 description='''
 A Minecraft mod focused on unique throwable snowballs and orbs with special world interactions.
 The first feature line is the Terraform Snowball family.
 '''
 
-[[dependencies.specialsnowballs]]
+[[dependencies.zahility]]
 modId="neoforge"
 type="required"
 versionRange="[21.1.244,)"
 ordering="NONE"
 side="BOTH"
 
-[[dependencies.specialsnowballs]]
+[[dependencies.zahility]]
 modId="minecraft"
 type="required"
 versionRange="[1.21.1]"

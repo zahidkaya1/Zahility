@@ -1,13 +1,13 @@
-package me.zahidkaya.specialsnowballs.registry;
+package me.zahidkaya.zahility.registry;
 
-import me.zahidkaya.specialsnowballs.SpecialSnowballs;
+import me.zahidkaya.zahility.Zahility;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.SnowballItem;
 import net.neoforged.neoforge.registries.DeferredItem;
 import net.neoforged.neoforge.registries.DeferredRegister;
 
 public final class ModItems {
-    public static final DeferredRegister.Items ITEMS = DeferredRegister.createItems(SpecialSnowballs.MOD_ID);
+    public static final DeferredRegister.Items ITEMS = DeferredRegister.createItems(Zahility.MOD_ID);
 
     // Survival/craftable line. Recipe intentionally comes later, after gameplay tuning.
     public static final DeferredItem<SnowballItem> TERRAFORM_SNOWBALL = ITEMS.register(
@@ -16,8 +16,8 @@ public final class ModItems {
     );
 
     // Creative/admin line. It intentionally has no recipe.
-    public static final DeferredItem<SnowballItem> CREATIVE_TERRAFORM_ORB = ITEMS.register(
-            "creative_terraform_orb",
+    public static final DeferredItem<SnowballItem> CREATIVE_TERRAFORM_SNOWBALL = ITEMS.register(
+            "creative_terraform_snowball",
             () -> new SnowballItem(new Item.Properties().stacksTo(64))
     );
 
