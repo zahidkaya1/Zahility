@@ -16,3 +16,4 @@ migration-backup-specialsnowballs/
 *.log
 hs_err_pid*.log
 migration-backup-specialsnowballs/
+.vscode/
