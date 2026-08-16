@@ -13,7 +13,7 @@
 - [x] Snow Golem isolation test
 - [x] Survival crafting recipe
 - [ ] Custom Zahility textures
-- [ ] Terraform particles and impact sound
+- [x] Terraform particles and impact sound
 - [ ] Final v0.1.0 balance pass
 - [ ] Build/release packaging
 
@@ -37,3 +37,4 @@ Zahility is not limited to snowballs. Possible categories include:
 - Minecraft 1.20.1 Forge â€” planned port
 - Newer NeoForge versions â€” planned ports
 - Fabric â€” planned after the primary NeoForge/Forge lines are stable
+- [x] Feature-based Java package structure started (feature/terraform)

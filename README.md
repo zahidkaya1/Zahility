@@ -56,3 +56,4 @@ The generated JAR is placed under `build/libs/`.
 ## Planned loader/version support
 
 Primary development starts on **Minecraft 1.21.1 NeoForge**. Planned ports include Minecraft 1.20.1 Forge and newer NeoForge lines. Fabric support is planned after the primary codebase is stable.
+- Terraform impact particles and sound

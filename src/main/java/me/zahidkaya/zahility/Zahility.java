@@ -1,6 +1,6 @@
 package me.zahidkaya.zahility;
 
-import me.zahidkaya.zahility.gameplay.TerraformImpactHandler;
+import me.zahidkaya.zahility.feature.terraform.TerraformImpactHandler;
 import me.zahidkaya.zahility.registry.ModCreativeTabs;
 import me.zahidkaya.zahility.registry.ModItems;
 import net.neoforged.bus.api.IEventBus;
