@@ -1,8 +1,10 @@
 # Zahility
 
-**Zahility** is a Minecraft Java Edition utility/Vanilla+ mod by Mehmet Zahid Kaya. Its goal is to add practical, gameplay-friendly items and mechanics that reduce repetitive work while keeping survival progression meaningful.
+**Zahility** is a Minecraft Java Edition utility / Vanilla+ mod by Mehmet Zahid Kaya.
 
-The first feature family is Terraform tools, beginning with the Terraform Snowball and a stronger Creative Terraform Snowball. Zahility is intentionally broader than throwable items: future releases can add utility tools, blocks, materials, quality-of-life mechanics, and other balanced additions.
+Its goal is to add practical gameplay-friendly items and mechanics that reduce repetitive work while keeping survival progression meaningful.
+
+Zahility is not limited to throwable items. Future versions may include utility tools, blocks, materials, quality-of-life mechanics, terrain tools, and other balanced additions.
 
 ## Current development target
 
@@ -13,23 +15,67 @@ The first feature family is Terraform tools, beginning with the Terraform Snowba
 - Development version: **0.1.0**
 - Mod ID: **`zahility`**
 
-## v0.1.0 current status
+## Current features
 
-Implemented:
+### Terraform Snowball
+
+Converts supported natural terrain blocks into Dirt on impact.
+
+Available variants:
 
 - `zahility:terraform_snowball`
 - `zahility:creative_terraform_snowball`
-- Dedicated **Zahility** creative tab
-- Turkish and English localization
-- Terraform impact detection
-- Natural-block-only terraform filtering through `#zahility:terraformable_blocks`
+
+Features:
+
 - Survival radius: **3 blocks**
 - Creative radius: **8 blocks**
-- Vanilla player snowballs and Snow Golem snowballs remain unaffected
-- Survival crafting recipe: Dirt + Snowballs + Ender Pearl -> **8 Terraform Snowballs**
-- Creative Terraform Snowball has no recipe
+- Only supported natural blocks are affected
+- Block filtering uses `#zahility:terraformable_blocks`
+- Vanilla Snowballs are unaffected
+- Snow Golem snowballs are unaffected
+- Custom impact particles and sound
+- Creative version uses the same texture with enchantment glint
+- Creative version has no crafting recipe
 
-The current item textures are temporary vanilla placeholders and will be replaced with Zahility textures later.
+Survival recipe output:
+
+- **8 Terraform Snowballs**
+
+### Leveling Snowball
+
+Levels terrain to a player-selected Y coordinate.
+
+Available variants:
+
+- `zahility:leveling_snowball`
+- `zahility:creative_leveling_snowball`
+
+Features:
+
+- Shift + Right Click a block to select the target Y level
+- Normal area: **7×7**
+- Creative area: **15×15**
+- Terrain above the selected Y level is removed
+- Terrain below the selected Y level is filled
+- Up to **6 blocks below the target surface** are supported when necessary
+- Deep caves and underground water do not interfere with leveling
+- Surface water columns are protected
+- Block Entity columns such as chests and furnaces are protected
+- Natural vegetation can be cleared during leveling
+- Creative version uses the same texture with enchantment glint
+- Creative version has no crafting recipe
+
+Survival recipe output:
+
+- **4 Leveling Snowballs**
+
+## Localization
+
+Currently supported:
+
+- English
+- Turkish
 
 ## Development setup
 
@@ -37,23 +83,3 @@ Start the development client:
 
 ```powershell
 .\gradlew.bat runClient
-```
-
-Compile Java:
-
-```powershell
-.\gradlew.bat compileJava
-```
-
-Build the mod:
-
-```powershell
-.\gradlew.bat build
-```
-
-The generated JAR is placed under `build/libs/`.
-
-## Planned loader/version support
-
-Primary development starts on **Minecraft 1.21.1 NeoForge**. Planned ports include Minecraft 1.20.1 Forge and newer NeoForge lines. Fabric support is planned after the primary codebase is stable.
-- Terraform impact particles and sound

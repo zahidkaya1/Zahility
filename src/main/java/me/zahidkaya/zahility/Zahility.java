@@ -1,7 +1,9 @@
 package me.zahidkaya.zahility;
 
+import me.zahidkaya.zahility.feature.leveling.LevelingImpactHandler;
 import me.zahidkaya.zahility.feature.terraform.TerraformImpactHandler;
 import me.zahidkaya.zahility.registry.ModCreativeTabs;
+import me.zahidkaya.zahility.registry.ModDataComponents;
 import me.zahidkaya.zahility.registry.ModItems;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.fml.common.Mod;
@@ -12,8 +14,11 @@ public final class Zahility {
     public static final String MOD_ID = "zahility";
 
     public Zahility(IEventBus modEventBus) {
+        ModDataComponents.DATA_COMPONENTS.register(modEventBus);
         ModItems.ITEMS.register(modEventBus);
         ModCreativeTabs.CREATIVE_TABS.register(modEventBus);
+
         NeoForge.EVENT_BUS.addListener(TerraformImpactHandler::onProjectileImpact);
+        NeoForge.EVENT_BUS.addListener(LevelingImpactHandler::onProjectileImpact);
     }
 }

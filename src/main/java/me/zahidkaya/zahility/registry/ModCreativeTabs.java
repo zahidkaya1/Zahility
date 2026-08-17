@@ -20,6 +20,8 @@ public final class ModCreativeTabs {
                     .displayItems((parameters, output) -> {
                         output.accept(ModItems.TERRAFORM_SNOWBALL.get());
                         output.accept(ModItems.CREATIVE_TERRAFORM_SNOWBALL.get());
+                        output.accept(ModItems.LEVELING_SNOWBALL.get());
+                        output.accept(ModItems.CREATIVE_LEVELING_SNOWBALL.get());
                     })
                     .build());
 

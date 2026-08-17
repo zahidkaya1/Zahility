@@ -1,5 +1,7 @@
 {
-  "itemGroup.zahility": "Ã–zel Kar ToplarÄ±",
-  "item.zahility.terraform_snowball": "TopraklaÅŸtÄ±rÄ±cÄ± Kar Topu",
-  "item.zahility.creative_terraform_snowball": "Creative Terraform Kar Topu"
+  "itemGroup.zahility": "Zahility",
+  "item.zahility.terraform_snowball": "Topraklaştırıcı Kar Topu",
+  "item.zahility.creative_terraform_snowball": "Yaratıcı Topraklaştırıcı Kar Topu",
+  "item.zahility.leveling_snowball": "Düzleştirici Kar Topu",
+  "item.zahility.creative_leveling_snowball": "Yaratıcı Düzleştirici Kar Topu"
 }

@@ -3,17 +3,17 @@ build/
 run/
 run-data/
 out/
+
 .idea/
+.vscode/
+
 *.iml
 *.ipr
 *.iws
+
 src/generated/resources/.cache/
 
 *.log
 hs_err_pid*.log
-migration-backup-specialsnowballs/
 
-*.log
-hs_err_pid*.log
 migration-backup-specialsnowballs/
-.vscode/
