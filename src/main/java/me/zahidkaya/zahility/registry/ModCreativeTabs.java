@@ -18,10 +18,15 @@ public final class ModCreativeTabs {
                     .withTabsBefore(CreativeModeTabs.COMBAT)
                     .icon(() -> ModItems.TERRAFORM_SNOWBALL.get().getDefaultInstance())
                     .displayItems((parameters, output) -> {
+
                         output.accept(ModItems.TERRAFORM_SNOWBALL.get());
                         output.accept(ModItems.CREATIVE_TERRAFORM_SNOWBALL.get());
+
                         output.accept(ModItems.LEVELING_SNOWBALL.get());
                         output.accept(ModItems.CREATIVE_LEVELING_SNOWBALL.get());
+
+                        output.accept(ModItems.SPONGE_SNOWBALL.get());
+                        output.accept(ModItems.CREATIVE_SPONGE_SNOWBALL.get());
                     })
                     .build());
 

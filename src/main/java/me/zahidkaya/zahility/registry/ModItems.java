@@ -9,10 +9,11 @@ import net.neoforged.neoforge.registries.DeferredItem;
 import net.neoforged.neoforge.registries.DeferredRegister;
 
 public final class ModItems {
+
     public static final DeferredRegister.Items ITEMS =
             DeferredRegister.createItems(Zahility.MOD_ID);
 
-    // Survival/craftable line.
+    // Terraform Snowball - Survival
     public static final DeferredItem<SnowballItem> TERRAFORM_SNOWBALL = ITEMS.register(
             "terraform_snowball",
             () -> new SnowballItem(
@@ -21,7 +22,7 @@ public final class ModItems {
             )
     );
 
-    // Creative/admin line. It intentionally has no recipe.
+    // Terraform Snowball - Creative
     public static final DeferredItem<SnowballItem> CREATIVE_TERRAFORM_SNOWBALL = ITEMS.register(
             "creative_terraform_snowball",
             () -> new SnowballItem(
@@ -31,6 +32,7 @@ public final class ModItems {
             )
     );
 
+    // Leveling Snowball - Survival
     public static final DeferredItem<LevelingSnowballItem> LEVELING_SNOWBALL = ITEMS.register(
             "leveling_snowball",
             () -> new LevelingSnowballItem(
@@ -39,9 +41,29 @@ public final class ModItems {
             )
     );
 
+    // Leveling Snowball - Creative
     public static final DeferredItem<LevelingSnowballItem> CREATIVE_LEVELING_SNOWBALL = ITEMS.register(
-        "creative_leveling_snowball",
+            "creative_leveling_snowball",
             () -> new LevelingSnowballItem(
+                    new Item.Properties()
+                            .stacksTo(64)
+                            .component(DataComponents.ENCHANTMENT_GLINT_OVERRIDE, true)
+            )
+    );
+
+    // Sponge Snowball - Survival
+    public static final DeferredItem<SnowballItem> SPONGE_SNOWBALL = ITEMS.register(
+            "sponge_snowball",
+            () -> new SnowballItem(
+                    new Item.Properties()
+                            .stacksTo(16)
+            )
+    );
+
+    // Sponge Snowball - Creative
+    public static final DeferredItem<SnowballItem> CREATIVE_SPONGE_SNOWBALL = ITEMS.register(
+            "creative_sponge_snowball",
+            () -> new SnowballItem(
                     new Item.Properties()
                             .stacksTo(64)
                             .component(DataComponents.ENCHANTMENT_GLINT_OVERRIDE, true)

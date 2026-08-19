@@ -1,0 +1,24 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "category": "misc",
+    "pattern": [
+        "SNS",
+        "NPN",
+        "SNS"
+    ],
+    "key": {
+        "S": {
+            "item": "minecraft:snowball"
+        },
+        "N": {
+            "item": "minecraft:nautilus_shell"
+        },
+        "P": {
+            "item": "minecraft:sponge"
+        }
+    },
+    "result": {
+        "id": "zahility:sponge_snowball",
+        "count": 4
+    }
+}
