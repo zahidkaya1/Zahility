@@ -70,6 +70,25 @@ public final class ModItems {
             )
     );
 
+    // Freezing Snowball - Survival
+    public static final DeferredItem<SnowballItem> FREEZING_SNOWBALL = ITEMS.register(
+            "freezing_snowball",
+            () -> new SnowballItem(
+                    new Item.Properties()
+                            .stacksTo(16)
+            )
+    );
+
+    // Freezing Snowball - Creative
+    public static final DeferredItem<SnowballItem> CREATIVE_FREEZING_SNOWBALL = ITEMS.register(
+            "creative_freezing_snowball",
+            () -> new SnowballItem(
+                    new Item.Properties()
+                            .stacksTo(64)
+                            .component(DataComponents.ENCHANTMENT_GLINT_OVERRIDE, true)
+            )
+    );
+
     private ModItems() {
     }
 }

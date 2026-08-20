@@ -27,6 +27,9 @@ public final class ModCreativeTabs {
 
                         output.accept(ModItems.SPONGE_SNOWBALL.get());
                         output.accept(ModItems.CREATIVE_SPONGE_SNOWBALL.get());
+
+                        output.accept(ModItems.FREEZING_SNOWBALL.get());
+                        output.accept(ModItems.CREATIVE_FREEZING_SNOWBALL.get());
                     })
                     .build());
 

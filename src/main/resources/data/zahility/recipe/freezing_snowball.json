@@ -1,0 +1,24 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "category": "misc",
+    "pattern": [
+        "SPS",
+        "PBP",
+        "SPS"
+    ],
+    "key": {
+        "S": {
+            "item": "minecraft:snowball"
+        },
+        "P": {
+            "item": "minecraft:packed_ice"
+        },
+        "B": {
+            "item": "minecraft:blue_ice"
+        }
+    },
+    "result": {
+        "id": "zahility:freezing_snowball",
+        "count": 4
+    }
+}
