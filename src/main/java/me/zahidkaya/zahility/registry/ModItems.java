@@ -89,6 +89,27 @@ public final class ModItems {
             )
     );
 
+
+
+    // Growth Snowball - Survival
+    public static final DeferredItem<SnowballItem> GROWTH_SNOWBALL = ITEMS.register(
+            "growth_snowball",
+            () -> new SnowballItem(
+                    new Item.Properties()
+                            .stacksTo(16)
+            )
+    );
+
+    // Growth Snowball - Creative
+    public static final DeferredItem<SnowballItem> CREATIVE_GROWTH_SNOWBALL = ITEMS.register(
+            "creative_growth_snowball",
+            () -> new SnowballItem(
+                    new Item.Properties()
+                            .stacksTo(64)
+                            .component(DataComponents.ENCHANTMENT_GLINT_OVERRIDE, true)
+            )
+    );
+
     private ModItems() {
     }
 }

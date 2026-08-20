@@ -30,6 +30,9 @@ public final class ModCreativeTabs {
 
                         output.accept(ModItems.FREEZING_SNOWBALL.get());
                         output.accept(ModItems.CREATIVE_FREEZING_SNOWBALL.get());
+
+                        output.accept(ModItems.GROWTH_SNOWBALL.get());
+                        output.accept(ModItems.CREATIVE_GROWTH_SNOWBALL.get());
                     })
                     .build());
 
