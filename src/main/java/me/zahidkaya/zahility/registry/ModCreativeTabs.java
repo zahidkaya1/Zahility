@@ -33,6 +33,9 @@ public final class ModCreativeTabs {
 
                         output.accept(ModItems.GROWTH_SNOWBALL.get());
                         output.accept(ModItems.CREATIVE_GROWTH_SNOWBALL.get());
+
+                        output.accept(ModItems.REPELLING_SNOWBALL.get());
+                        output.accept(ModItems.CREATIVE_REPELLING_SNOWBALL.get());
                     })
                     .build());
 

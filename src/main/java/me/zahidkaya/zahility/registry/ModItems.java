@@ -110,6 +110,26 @@ public final class ModItems {
             )
     );
 
+        // Repelling Snowball - Survival
+    public static final DeferredItem<SnowballItem> REPELLING_SNOWBALL = ITEMS.register(
+            "repelling_snowball",
+            () -> new SnowballItem(
+                    new Item.Properties()
+                            .stacksTo(16)
+            )
+    );
+
+    // Repelling Snowball - Creative
+    public static final DeferredItem<SnowballItem> CREATIVE_REPELLING_SNOWBALL = ITEMS.register(
+            "creative_repelling_snowball",
+            () -> new SnowballItem(
+                    new Item.Properties()
+                            .stacksTo(64)
+                            .component(DataComponents.ENCHANTMENT_GLINT_OVERRIDE, true)
+            )
+    );
+
+
     private ModItems() {
     }
 }

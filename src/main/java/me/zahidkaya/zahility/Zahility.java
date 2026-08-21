@@ -5,7 +5,7 @@ import me.zahidkaya.zahility.feature.freezing.FreezingImpactHandler;
 import me.zahidkaya.zahility.feature.sponge.SpongeImpactHandler;
 import me.zahidkaya.zahility.feature.terraform.TerraformImpactHandler;
 import me.zahidkaya.zahility.feature.growth.GrowthImpactHandler;
-
+import me.zahidkaya.zahility.feature.repelling.RepellingImpactHandler;
 
 import me.zahidkaya.zahility.registry.ModCreativeTabs;
 import me.zahidkaya.zahility.registry.ModDataComponents;
@@ -28,5 +28,7 @@ public final class Zahility {
         NeoForge.EVENT_BUS.addListener(SpongeImpactHandler::onProjectileImpact);
         NeoForge.EVENT_BUS.addListener(FreezingImpactHandler::onProjectileImpact);
         NeoForge.EVENT_BUS.addListener(GrowthImpactHandler::onProjectileImpact);
+        NeoForge.EVENT_BUS.addListener(RepellingImpactHandler::onProjectileImpact);
+
     }
 }
