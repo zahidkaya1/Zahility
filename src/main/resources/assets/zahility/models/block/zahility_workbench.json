@@ -1,0 +1,12 @@
+{
+    "parent": "minecraft:block/cube",
+    "textures": {
+        "down": "zahility:block/zahility_workbench_side",
+        "up": "zahility:block/zahility_workbench_top",
+        "north": "zahility:block/zahility_workbench_front",
+        "south": "zahility:block/zahility_workbench_side",
+        "west": "zahility:block/zahility_workbench_side",
+        "east": "zahility:block/zahility_workbench_side",
+        "particle": "zahility:block/zahility_workbench_side"
+    }
+}

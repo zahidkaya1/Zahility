@@ -1,10 +1,12 @@
 package me.zahidkaya.zahility.registry;
 
 import me.zahidkaya.zahility.Zahility;
-import me.zahidkaya.zahility.feature.leveling.LevelingSnowballItem;
 import me.zahidkaya.zahility.feature.leveling.InfiniteLevelingSnowballItem;
+import me.zahidkaya.zahility.feature.leveling.LevelingSnowballItem;
 import me.zahidkaya.zahility.item.InfiniteSnowballItem;
 import net.minecraft.core.component.DataComponents;
+import net.minecraft.world.item.Rarity;
+import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.SnowballItem;
 import net.neoforged.neoforge.registries.DeferredItem;
@@ -15,6 +17,59 @@ public final class ModItems {
 
     public static final DeferredRegister.Items ITEMS =
             DeferredRegister.createItems(Zahility.MOD_ID);
+
+
+     /*
+     * Zahility Workbench BlockItem.
+     *
+     * Bloğun envanterde tutulmasını ve dünyaya
+     * oyuncu tarafından yerleştirilmesini sağlar.
+     */
+
+    public static final DeferredItem<BlockItem> ZAHILITY_WORKBENCH = ITEMS.register(
+            "zahility_workbench",
+            () -> new BlockItem(
+                    ModBlocks.ZAHILITY_WORKBENCH.get(),
+                    new Item.Properties()
+            )
+    );
+
+     /*
+     * Özel Kar Topu Şablonu.
+     *
+     * Bir kar topu türünün ilk kez üretilmesinde
+     * kullanılacak nadir şablon.
+     */
+
+    public static final DeferredItem<Item> SPECIAL_SNOWBALL_TEMPLATE = ITEMS.register(
+            "special_snowball_template",
+            () -> new Item(
+                    new Item.Properties()
+                            .stacksTo(16)
+                            .rarity(Rarity.RARE)
+            )
+    );
+
+
+
+    /*
+     * Sonsuzluk Çekirdeği.
+     *
+     * Normal özel kar toplarını Sonsuz sürümlerine
+     * dönüştürmekte kullanılacak çok nadir malzeme.
+     */
+    public static final DeferredItem<Item> INFINITY_CORE = ITEMS.register(
+            "infinity_core",
+            () -> new Item(
+                    new Item.Properties()
+                            .stacksTo(16)
+                            .rarity(Rarity.EPIC)
+                            .component(
+                                    DataComponents.ENCHANTMENT_GLINT_OVERRIDE,
+                                    true
+                            )
+            )
+    );
 
     // Terraform Snowball - Survival
     public static final DeferredItem<SnowballItem> TERRAFORM_SNOWBALL = ITEMS.register(

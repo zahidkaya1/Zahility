@@ -1,19 +1,20 @@
 {
-    "type": "minecraft:crafting_shaped",
-    "category": "misc",
+    "type": "zahility:workbench_shaped",
+    "group": "sponge_initial",
+    "category": "snowball_initial",
     "pattern": [
-        "SNS",
-        "NPN",
-        "SNS"
+        "SSS",
+        "STS",
+        "SCS"
     ],
     "key": {
         "S": {
             "item": "minecraft:snowball"
         },
-        "N": {
-            "item": "minecraft:nautilus_shell"
+        "T": {
+            "item": "zahility:special_snowball_template"
         },
-        "P": {
+        "C": {
             "item": "minecraft:sponge"
         }
     },

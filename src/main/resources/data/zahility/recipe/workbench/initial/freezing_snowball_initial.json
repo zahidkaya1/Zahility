@@ -1,0 +1,25 @@
+{
+    "type": "zahility:workbench_shaped",
+    "group": "freezing_initial",
+    "category": "snowball_initial",
+    "pattern": [
+        "SSS",
+        "STS",
+        "SCS"
+    ],
+    "key": {
+        "S": {
+            "item": "minecraft:snowball"
+        },
+        "T": {
+            "item": "zahility:special_snowball_template"
+        },
+        "C": {
+            "item": "minecraft:packed_ice"
+        }
+    },
+    "result": {
+        "id": "zahility:freezing_snowball",
+        "count": 4
+    }
+}

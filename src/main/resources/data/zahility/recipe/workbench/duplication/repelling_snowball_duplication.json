@@ -1,0 +1,25 @@
+{
+    "type": "zahility:workbench_shaped",
+    "group": "repelling_duplication",
+    "category": "snowball_duplication",
+    "pattern": [
+        "SSS",
+        "SBS",
+        "SCS"
+    ],
+    "key": {
+        "S": {
+            "item": "minecraft:snowball"
+        },
+        "B": {
+            "item": "zahility:repelling_snowball"
+        },
+        "C": {
+            "item": "minecraft:spider_eye"
+        }
+    },
+    "result": {
+        "id": "zahility:repelling_snowball",
+        "count": 8
+    }
+}

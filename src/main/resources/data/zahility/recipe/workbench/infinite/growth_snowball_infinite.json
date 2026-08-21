@@ -1,0 +1,25 @@
+{
+    "type": "zahility:workbench_shaped",
+    "group": "growth_infinite",
+    "category": "snowball_infinite",
+    "pattern": [
+        "B",
+        "C",
+        "N"
+    ],
+    "key": {
+        "B": {
+            "item": "zahility:growth_snowball"
+        },
+        "C": {
+            "item": "zahility:infinity_core"
+        },
+        "N": {
+            "item": "minecraft:netherite_block"
+        }
+    },
+    "result": {
+        "id": "zahility:creative_growth_snowball",
+        "count": 1
+    }
+}

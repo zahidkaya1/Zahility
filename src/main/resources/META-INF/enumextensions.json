@@ -1,0 +1,55 @@
+{
+    "entries": [
+        {
+            "enum": "net/minecraft/world/inventory/RecipeBookType",
+            "name": "ZAHILITY_WORKBENCH",
+            "constructor": "()V",
+            "parameters": []
+        },
+        {
+            "enum": "net/minecraft/client/RecipeBookCategories",
+            "name": "ZAHILITY_WORKBENCH_SEARCH",
+            "constructor": "(Ljava/util/function/Supplier;)V",
+            "parameters": {
+                "class": "me/zahidkaya/zahility/client/workbench/ZahilityRecipeBookEnums",
+                "method": "searchIcon"
+            }
+        },
+        {
+            "enum": "net/minecraft/client/RecipeBookCategories",
+            "name": "ZAHILITY_WORKBENCH_MATERIALS",
+            "constructor": "(Ljava/util/function/Supplier;)V",
+            "parameters": {
+                "class": "me/zahidkaya/zahility/client/workbench/ZahilityRecipeBookEnums",
+                "method": "materialsIcon"
+            }
+        },
+        {
+            "enum": "net/minecraft/client/RecipeBookCategories",
+            "name": "ZAHILITY_WORKBENCH_INITIAL",
+            "constructor": "(Ljava/util/function/Supplier;)V",
+            "parameters": {
+                "class": "me/zahidkaya/zahility/client/workbench/ZahilityRecipeBookEnums",
+                "method": "initialIcon"
+            }
+        },
+        {
+            "enum": "net/minecraft/client/RecipeBookCategories",
+            "name": "ZAHILITY_WORKBENCH_DUPLICATION",
+            "constructor": "(Ljava/util/function/Supplier;)V",
+            "parameters": {
+                "class": "me/zahidkaya/zahility/client/workbench/ZahilityRecipeBookEnums",
+                "method": "duplicationIcon"
+            }
+        },
+        {
+            "enum": "net/minecraft/client/RecipeBookCategories",
+            "name": "ZAHILITY_WORKBENCH_INFINITE",
+            "constructor": "(Ljava/util/function/Supplier;)V",
+            "parameters": {
+                "class": "me/zahidkaya/zahility/client/workbench/ZahilityRecipeBookEnums",
+                "method": "infiniteIcon"
+            }
+        }
+    ]
+}

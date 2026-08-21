@@ -1,0 +1,25 @@
+{
+    "type": "zahility:workbench_shaped",
+    "group": "sponge_duplication",
+    "category": "snowball_duplication",
+    "pattern": [
+        "SSS",
+        "SBS",
+        "SCS"
+    ],
+    "key": {
+        "S": {
+            "item": "minecraft:snowball"
+        },
+        "B": {
+            "item": "zahility:sponge_snowball"
+        },
+        "C": {
+            "item": "minecraft:prismarine_crystals"
+        }
+    },
+    "result": {
+        "id": "zahility:sponge_snowball",
+        "count": 8
+    }
+}

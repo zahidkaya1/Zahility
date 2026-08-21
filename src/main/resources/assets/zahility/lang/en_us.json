@@ -24,5 +24,9 @@
   "message.zahility.growth.empty": "No growable plants found.",
   "message.zahility.repelling.normal_success": "Enemies repelled: %s",
   "message.zahility.repelling.creative_success": "Enemies removed: %s",
-  "message.zahility.repelling.empty": "No eligible enemies found."
+  "message.zahility.repelling.empty": "No eligible enemies found.",
+  "block.zahility.zahility_workbench": "Zahility Workbench",
+  "item.zahility.special_snowball_template": "Special Snowball Template",
+  "item.zahility.infinity_core": "Infinity Core",
+  "menu.zahility.workbench": "Zahility Workbench"
 }

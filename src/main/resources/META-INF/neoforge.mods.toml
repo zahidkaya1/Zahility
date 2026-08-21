@@ -7,6 +7,7 @@ modId="zahility"
 version="0.1.0"
 displayName="Zahility"
 authors="Mehmet Zahid Kaya"
+enumExtensions="META-INF/enumextensions.json"
 description='''
 A Minecraft mod focused on unique throwable snowballs and orbs with special world interactions.
 The first feature line is the Terraform Snowball family.

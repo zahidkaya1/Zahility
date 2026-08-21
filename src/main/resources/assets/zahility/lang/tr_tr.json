@@ -24,5 +24,9 @@
   "message.zahility.growth.empty": "Büyütülebilecek bitki bulunamadı.",
   "message.zahility.repelling.normal_success": "Uzaklaştırılan düşman: %s",
   "message.zahility.repelling.creative_success": "Kaldırılan düşman: %s",
-  "message.zahility.repelling.empty": "Etkilenebilecek düşman bulunamadı."
+  "message.zahility.repelling.empty": "Etkilenebilecek düşman bulunamadı.",
+  "block.zahility.zahility_workbench": "Zahility Tezgâhı",
+  "item.zahility.special_snowball_template": "Özel Kar Topu Şablonu",
+  "item.zahility.infinity_core": "Sonsuzluk Çekirdeği",
+  "menu.zahility.workbench": "Zahility Tezgâhı"
 }

@@ -1,0 +1,25 @@
+{
+    "type": "zahility:workbench_shaped",
+    "group": "repelling_initial",
+    "category": "snowball_initial",
+    "pattern": [
+        "SSS",
+        "STS",
+        "SCS"
+    ],
+    "key": {
+        "S": {
+            "item": "minecraft:snowball"
+        },
+        "T": {
+            "item": "zahility:special_snowball_template"
+        },
+        "C": {
+            "item": "minecraft:ghast_tear"
+        }
+    },
+    "result": {
+        "id": "zahility:repelling_snowball",
+        "count": 4
+    }
+}

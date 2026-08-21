@@ -1,0 +1,25 @@
+{
+    "type": "zahility:workbench_shaped",
+    "group": "freezing_duplication",
+    "category": "snowball_duplication",
+    "pattern": [
+        "SSS",
+        "SBS",
+        "SCS"
+    ],
+    "key": {
+        "S": {
+            "item": "minecraft:snowball"
+        },
+        "B": {
+            "item": "zahility:freezing_snowball"
+        },
+        "C": {
+            "item": "minecraft:ice"
+        }
+    },
+    "result": {
+        "id": "zahility:freezing_snowball",
+        "count": 8
+    }
+}

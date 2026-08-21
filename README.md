@@ -1,85 +1,67 @@
 # Zahility
 
-**Zahility** is a Minecraft Java Edition utility / Vanilla+ mod by Mehmet Zahid Kaya.
+<p align="center">
+  A Minecraft Vanilla+ utility mod focused on practical tools, specialized crafting and unique snowballs.
+</p>
 
-Its goal is to add practical gameplay-friendly items and mechanics that reduce repetitive work while keeping survival progression meaningful.
+<p align="center">
+  <img alt="Minecraft 1.21.1" src="https://img.shields.io/badge/Minecraft-1.21.1-62B47A">
+  <img alt="NeoForge 21.1.244" src="https://img.shields.io/badge/NeoForge-21.1.244-E68A2E">
+  <img alt="Java 21" src="https://img.shields.io/badge/Java-21-ED8B00">
+  <img alt="Development status" src="https://img.shields.io/badge/Status-Development-8A5CF6">
+  <img alt="License" src="https://img.shields.io/badge/License-All%20Rights%20Reserved-lightgrey">
+</p>
 
-Zahility is not limited to throwable items. Future versions may include utility tools, blocks, materials, quality-of-life mechanics, terrain tools, and other balanced additions.
+## About
 
-## Current development target
+**Zahility** is a Minecraft Java Edition utility and Vanilla+ mod developed by **Mehmet Zahid Kaya**.
 
-- Minecraft: **1.21.1**
-- Loader: **NeoForge**
-- NeoForge: **21.1.244**
-- Java: **21**
-- Development version: **0.1.0**
-- Mod ID: **`zahility`**
+Its goal is to reduce repetitive work through practical, gameplay-friendly mechanics while preserving meaningful survival progression.
 
-## Current features
+Although the first feature family is based on specialized snowballs, Zahility is not limited to throwable items. Future versions may include new tools, blocks, materials, crafting systems and other quality-of-life features.
 
-### Terraform Snowball
+> Zahility is currently in active development. Features, recipes and balancing may change before the first stable release.
 
-Converts supported natural terrain blocks into Dirt on impact.
+## Requirements
 
-Available variants:
+| Requirement | Version |
+|---|---:|
+| Minecraft | 1.21.1 |
+| NeoForge | 21.1.244 or newer |
+| Java | 21 |
+| Zahility | 0.1.0 |
+| Side | Client and server |
 
-- `zahility:terraform_snowball`
-- `zahility:creative_terraform_snowball`
+Zahility currently targets **NeoForge only**. Fabric and Forge versions are not available.
 
-Features:
+## Features
 
-- Survival radius: **3 blocks**
-- Creative radius: **8 blocks**
-- Only supported natural blocks are affected
-- Block filtering uses `#zahility:terraformable_blocks`
-- Vanilla Snowballs are unaffected
-- Snow Golem snowballs are unaffected
-- Custom impact particles and sound
-- Creative version uses the same texture with enchantment glint
-- Creative version has no crafting recipe
+### Zahility Workbench
 
-Survival recipe output:
+The Zahility Workbench is a dedicated 3×3 crafting station used for Zahility recipes.
 
-- **8 Terraform Snowballs**
+Features include:
 
-### Leveling Snowball
+- Dedicated Zahility recipe type
+- Vanilla-style recipe book
+- Search field and recipe categories
+- Automatic recipe placement
+- Ghost recipe support
+- Separate material, initial, duplication and infinite recipe categories
+- Directional placement
+- Faster mining with axes
+- Survival block drops
+- Custom block and interface visuals
 
-Levels terrain to a player-selected Y coordinate.
+The workbench itself is crafted in a normal Crafting Table. Specialized Zahility materials and snowballs are then produced inside the Zahility Workbench.
 
-Available variants:
+### Special Snowball Template
 
-- `zahility:leveling_snowball`
-- `zahility:creative_leveling_snowball`
+The Special Snowball Template is one of the primary materials used when initially creating specialized snowballs.
 
-Features:
+It is crafted exclusively in the Zahility Workbench.
 
-- Shift + Right Click a block to select the target Y level
-- Normal area: **7×7**
-- Creative area: **15×15**
-- Terrain above the selected Y level is removed
-- Terrain below the selected Y level is filled
-- Up to **6 blocks below the target surface** are supported when necessary
-- Deep caves and underground water do not interfere with leveling
-- Surface water columns are protected
-- Block Entity columns such as chests and furnaces are protected
-- Natural vegetation can be cleared during leveling
-- Creative version uses the same texture with enchantment glint
-- Creative version has no crafting recipe
+Item ID:
 
-Survival recipe output:
-
-- **4 Leveling Snowballs**
-
-## Localization
-
-Currently supported:
-
-- English
-- Turkish
-
-## Development setup
-
-Start the development client:
-
-```powershell
-.\gradlew.bat runClient
+```text
+zahility:special_snowball_template

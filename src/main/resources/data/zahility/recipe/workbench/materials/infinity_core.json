@@ -1,0 +1,25 @@
+{
+    "type": "zahility:workbench_shaped",
+    "group": "infinity_core",
+    "category": "workbench_material",
+    "pattern": [
+        "EGE",
+        "GNG",
+        "EGE"
+    ],
+    "key": {
+        "E": {
+            "item": "minecraft:ender_eye"
+        },
+        "G": {
+            "item": "minecraft:echo_shard"
+        },
+        "N": {
+            "item": "minecraft:nether_star"
+        }
+    },
+    "result": {
+        "id": "zahility:infinity_core",
+        "count": 1
+    }
+}

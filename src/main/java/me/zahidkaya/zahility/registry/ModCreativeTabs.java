@@ -19,6 +19,11 @@ public final class ModCreativeTabs {
                     .icon(() -> ModItems.TERRAFORM_SNOWBALL.get().getDefaultInstance())
                     .displayItems((parameters, output) -> {
 
+                        output.accept(ModItems.ZAHILITY_WORKBENCH.get());
+
+                        output.accept(ModItems.SPECIAL_SNOWBALL_TEMPLATE.get());
+                        output.accept(ModItems.INFINITY_CORE.get());
+
                         output.accept(ModItems.TERRAFORM_SNOWBALL.get());
                         output.accept(ModItems.CREATIVE_TERRAFORM_SNOWBALL.get());
 

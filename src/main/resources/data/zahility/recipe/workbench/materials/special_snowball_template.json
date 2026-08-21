@@ -1,0 +1,25 @@
+{
+    "type": "zahility:workbench_shaped",
+    "group": "special_snowball_template",
+    "category": "workbench_material",
+    "pattern": [
+        "ADA",
+        "DSD",
+        "ADA"
+    ],
+    "key": {
+        "A": {
+            "item": "minecraft:amethyst_shard"
+        },
+        "D": {
+            "item": "minecraft:diamond"
+        },
+        "S": {
+            "item": "minecraft:snow_block"
+        }
+    },
+    "result": {
+        "id": "zahility:special_snowball_template",
+        "count": 1
+    }
+}
