@@ -11,5 +11,18 @@
   "item.zahility.growth_snowball": "Yeşertici Kar Topu",
   "item.zahility.creative_growth_snowball": "Yaratıcı Yeşertici Kar Topu",
   "item.zahility.repelling_snowball": "Kovucu Kar Topu",
-  "item.zahility.creative_repelling_snowball": "Yaratıcı Kovucu Kar Topu"
+  "item.zahility.creative_repelling_snowball": "Yaratıcı Kovucu Kar Topu",
+  "message.zahility.leveling.select_required": "Önce düzleme seviyesini seç.",
+  "message.zahility.leveling.selected": "Düzleme seviyesi: Y = %s",
+  "message.zahility.leveling.success": "Düzlendi: %sx%s | Y: %s",
+  "message.zahility.leveling.success_protected": "Düzlendi: %sx%s | Y: %s | Korunan: %s",
+  "message.zahility.sponge.success": "Emilen su: %s",
+  "message.zahility.sponge.empty": "Emilecek su bulunamadı.",
+  "message.zahility.freezing.success": "Dondurulan su: %s",
+  "message.zahility.freezing.empty": "Dondurulacak su bulunamadı.",
+  "message.zahility.growth.success": "Büyütme işlemi: %s",
+  "message.zahility.growth.empty": "Büyütülebilecek bitki bulunamadı.",
+  "message.zahility.repelling.normal_success": "Uzaklaştırılan düşman: %s",
+  "message.zahility.repelling.creative_success": "Kaldırılan düşman: %s",
+  "message.zahility.repelling.empty": "Etkilenebilecek düşman bulunamadı."
 }

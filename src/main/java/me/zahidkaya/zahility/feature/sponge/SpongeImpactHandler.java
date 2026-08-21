@@ -112,27 +112,27 @@ public final class SpongeImpactHandler {
         }
 
         /*
-         * Atan oyuncuya kısa bilgi mesajı.
+         * Sonucu oyuncunun action bar bölümünde göster.
          */
         if (snowball.getOwner() instanceof Player player) {
 
             if (absorbedWater > 0) {
 
                 player.displayClientMessage(
-                        Component.literal(
-                                "Emilen su hücresi: "
-                                        + absorbedWater
+                        Component.translatable(
+                                "message.zahility.sponge.success",
+                                absorbedWater
                         ),
-                        false
+                        true
                 );
 
             } else {
 
                 player.displayClientMessage(
-                        Component.literal(
-                                "Emilecek su bulunamadı."
+                        Component.translatable(
+                                "message.zahility.sponge.empty"
                         ),
-                        false
+                        true
                 );
             }
         }

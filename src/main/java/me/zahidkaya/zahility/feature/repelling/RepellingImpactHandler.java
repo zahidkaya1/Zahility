@@ -192,30 +192,32 @@ public final class RepellingImpactHandler {
         }
 
         /*
-         * Atan oyuncuya işlem sonucu hakkında bilgi ver.
+         * Sonucu oyuncunun action bar bölümünde göster.
          */
         if (snowball.getOwner() instanceof Player player) {
 
             if (affectedTargets > 0) {
 
+                String messageKey =
+                        creative
+                                ? "message.zahility.repelling.creative_success"
+                                : "message.zahility.repelling.normal_success";
+
                 player.displayClientMessage(
-                        Component.literal(
-                                creative
-                                        ? "Kaldırılan düşman: "
-                                            + affectedTargets
-                                        : "Uzaklaştırılan düşman: "
-                                            + affectedTargets
+                        Component.translatable(
+                                messageKey,
+                                affectedTargets
                         ),
-                        false
+                        true
                 );
 
             } else {
 
                 player.displayClientMessage(
-                        Component.literal(
-                                "Etkilenebilecek düşman bulunamadı."
+                        Component.translatable(
+                                "message.zahility.repelling.empty"
                         ),
-                        false
+                        true
                 );
             }
         }

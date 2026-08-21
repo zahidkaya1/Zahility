@@ -123,27 +123,27 @@ public final class GrowthImpactHandler {
         }
 
         /*
-         * Atan oyuncuya işlem sonucu hakkında bilgi ver.
+         * Sonucu oyuncunun action bar bölümünde göster.
          */
         if (snowball.getOwner() instanceof Player player) {
 
             if (grownPlants > 0) {
 
                 player.displayClientMessage(
-                        Component.literal(
-                                "Gerçekleşen büyütme işlemi: "
-                                        + grownPlants
+                        Component.translatable(
+                                "message.zahility.growth.success",
+                                grownPlants
                         ),
-                        false
+                        true
                 );
 
             } else {
 
                 player.displayClientMessage(
-                        Component.literal(
-                                "Büyütülebilecek bitki bulunamadı."
+                        Component.translatable(
+                                "message.zahility.growth.empty"
                         ),
-                        false
+                        true
                 );
             }
         }

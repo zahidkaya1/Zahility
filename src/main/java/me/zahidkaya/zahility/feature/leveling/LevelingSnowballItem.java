@@ -35,7 +35,10 @@ public class LevelingSnowballItem extends SnowballItem {
             );
 
             player.displayClientMessage(
-                    Component.literal("Düzleme seviyesi seçildi: Y = " + selectedY),
+                    Component.translatable(
+                            "message.zahility.leveling.selected",
+                            selectedY
+                    ),
                     true
             );
         }

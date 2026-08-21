@@ -11,5 +11,18 @@
   "item.zahility.growth_snowball": "Growth Snowball",
   "item.zahility.creative_growth_snowball": "Creative Growth Snowball",
   "item.zahility.repelling_snowball": "Repelling Snowball",
-  "item.zahility.creative_repelling_snowball": "Creative Repelling Snowball"
+  "item.zahility.creative_repelling_snowball": "Creative Repelling Snowball",
+  "message.zahility.leveling.select_required": "Select a leveling height first.",
+  "message.zahility.leveling.selected": "Leveling height: Y = %s",
+  "message.zahility.leveling.success": "Leveled: %sx%s | Y: %s",
+  "message.zahility.leveling.success_protected": "Leveled: %sx%s | Y: %s | Protected: %s",
+  "message.zahility.sponge.success": "Water absorbed: %s",
+  "message.zahility.sponge.empty": "No water found to absorb.",
+  "message.zahility.freezing.success": "Water frozen: %s",
+  "message.zahility.freezing.empty": "No water found to freeze.",
+  "message.zahility.growth.success": "Growth actions: %s",
+  "message.zahility.growth.empty": "No growable plants found.",
+  "message.zahility.repelling.normal_success": "Enemies repelled: %s",
+  "message.zahility.repelling.creative_success": "Enemies removed: %s",
+  "message.zahility.repelling.empty": "No eligible enemies found."
 }

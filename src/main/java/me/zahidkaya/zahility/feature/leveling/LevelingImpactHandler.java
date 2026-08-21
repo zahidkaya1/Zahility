@@ -82,17 +82,17 @@ public final class LevelingImpactHandler {
         if (targetY == null) {
 
             if (snowball.getOwner() instanceof Player player) {
+
                 player.displayClientMessage(
-                        Component.literal(
-                                "Önce bir düzleme seviyesi seçmelisin."
+                        Component.translatable(
+                                "message.zahility.leveling.select_required"
                         ),
-                        false
+                        true
                 );
             }
 
             return;
         }
-
         BlockPos center = snowball.blockPosition();
 
         int skippedColumns = flattenArea(
@@ -106,40 +106,35 @@ public final class LevelingImpactHandler {
         int totalColumns = size * size;
 
         /*
-        * Alanın tamamı korunmuşsa efekt oynatma.
-        * En az bir sütun işlendiğinde efekt göster.
-        */
-        if (skippedColumns < totalColumns) {
-        playLevelingEffect(
-                level,
-                center,
-                targetY,
-                radius
-        );
-        }
-
+         * Sonucu oyuncunun action bar bölümünde göster.
+         */
         if (snowball.getOwner() instanceof Player player) {
 
-
-
-            String message =
-                    "Alan düzleştirildi: "
-                            + size
-                            + "x"
-                            + size
-                            + " | Hedef: Y = "
-                            + targetY;
-
             if (skippedColumns > 0) {
-                message +=
-                        " | Korunan sütun: "
-                                + skippedColumns;
-            }
 
-            player.displayClientMessage(
-                    Component.literal(message),
-                    false
-            );
+                player.displayClientMessage(
+                        Component.translatable(
+                                "message.zahility.leveling.success_protected",
+                                size,
+                                size,
+                                targetY,
+                                skippedColumns
+                        ),
+                        true
+                );
+
+            } else {
+
+                player.displayClientMessage(
+                        Component.translatable(
+                                "message.zahility.leveling.success",
+                                size,
+                                size,
+                                targetY
+                        ),
+                        true
+                );
+            }
         }
     }
 

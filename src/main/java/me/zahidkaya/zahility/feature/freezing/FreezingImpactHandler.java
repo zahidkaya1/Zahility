@@ -108,27 +108,27 @@ public final class FreezingImpactHandler {
         }
 
         /*
-         * Atan oyuncuya işlem sonucu hakkında bilgi ver.
+         * Sonucu oyuncunun action bar bölümünde göster.
          */
         if (snowball.getOwner() instanceof Player player) {
 
             if (frozenWater > 0) {
 
                 player.displayClientMessage(
-                        Component.literal(
-                                "Dondurulan su hücresi: "
-                                        + frozenWater
+                        Component.translatable(
+                                "message.zahility.freezing.success",
+                                frozenWater
                         ),
-                        false
+                        true
                 );
 
             } else {
 
                 player.displayClientMessage(
-                        Component.literal(
-                                "Dondurulacak su bulunamadı."
+                        Component.translatable(
+                                "message.zahility.freezing.empty"
                         ),
-                        false
+                        true
                 );
             }
         }
