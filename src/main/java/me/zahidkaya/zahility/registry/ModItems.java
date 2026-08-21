@@ -2,11 +2,14 @@ package me.zahidkaya.zahility.registry;
 
 import me.zahidkaya.zahility.Zahility;
 import me.zahidkaya.zahility.feature.leveling.LevelingSnowballItem;
+import me.zahidkaya.zahility.feature.leveling.InfiniteLevelingSnowballItem;
+import me.zahidkaya.zahility.item.InfiniteSnowballItem;
 import net.minecraft.core.component.DataComponents;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.SnowballItem;
 import net.neoforged.neoforge.registries.DeferredItem;
 import net.neoforged.neoforge.registries.DeferredRegister;
+
 
 public final class ModItems {
 
@@ -22,12 +25,12 @@ public final class ModItems {
             )
     );
 
-    // Terraform Snowball - Creative
-    public static final DeferredItem<SnowballItem> CREATIVE_TERRAFORM_SNOWBALL = ITEMS.register(
+    // Terraform Snowball - Infinite
+    public static final DeferredItem<InfiniteSnowballItem> CREATIVE_TERRAFORM_SNOWBALL = ITEMS.register(
             "creative_terraform_snowball",
-            () -> new SnowballItem(
+            () -> new InfiniteSnowballItem(
                     new Item.Properties()
-                            .stacksTo(64)
+                            .stacksTo(1)
                             .component(DataComponents.ENCHANTMENT_GLINT_OVERRIDE, true)
             )
     );
@@ -41,12 +44,12 @@ public final class ModItems {
             )
     );
 
-    // Leveling Snowball - Creative
-    public static final DeferredItem<LevelingSnowballItem> CREATIVE_LEVELING_SNOWBALL = ITEMS.register(
+    // Leveling Snowball - Infinite
+    public static final DeferredItem<InfiniteLevelingSnowballItem> CREATIVE_LEVELING_SNOWBALL = ITEMS.register(
             "creative_leveling_snowball",
-            () -> new LevelingSnowballItem(
+            () -> new InfiniteLevelingSnowballItem(
                     new Item.Properties()
-                            .stacksTo(64)
+                            .stacksTo(1)
                             .component(DataComponents.ENCHANTMENT_GLINT_OVERRIDE, true)
             )
     );
@@ -60,12 +63,12 @@ public final class ModItems {
             )
     );
 
-    // Sponge Snowball - Creative
-    public static final DeferredItem<SnowballItem> CREATIVE_SPONGE_SNOWBALL = ITEMS.register(
+    // Sponge Snowball - Infinite
+    public static final DeferredItem<InfiniteSnowballItem> CREATIVE_SPONGE_SNOWBALL = ITEMS.register(
             "creative_sponge_snowball",
-            () -> new SnowballItem(
+            () -> new InfiniteSnowballItem(
                     new Item.Properties()
-                            .stacksTo(64)
+                            .stacksTo(1)
                             .component(DataComponents.ENCHANTMENT_GLINT_OVERRIDE, true)
             )
     );
@@ -79,17 +82,15 @@ public final class ModItems {
             )
     );
 
-    // Freezing Snowball - Creative
-    public static final DeferredItem<SnowballItem> CREATIVE_FREEZING_SNOWBALL = ITEMS.register(
+    // Freezing Snowball - Infinite
+    public static final DeferredItem<InfiniteSnowballItem> CREATIVE_FREEZING_SNOWBALL = ITEMS.register(
             "creative_freezing_snowball",
-            () -> new SnowballItem(
+            () -> new InfiniteSnowballItem(
                     new Item.Properties()
-                            .stacksTo(64)
+                            .stacksTo(1)
                             .component(DataComponents.ENCHANTMENT_GLINT_OVERRIDE, true)
             )
     );
-
-
 
     // Growth Snowball - Survival
     public static final DeferredItem<SnowballItem> GROWTH_SNOWBALL = ITEMS.register(
@@ -100,17 +101,17 @@ public final class ModItems {
             )
     );
 
-    // Growth Snowball - Creative
-    public static final DeferredItem<SnowballItem> CREATIVE_GROWTH_SNOWBALL = ITEMS.register(
+    // Growth Snowball - Infinite
+    public static final DeferredItem<InfiniteSnowballItem> CREATIVE_GROWTH_SNOWBALL = ITEMS.register(
             "creative_growth_snowball",
-            () -> new SnowballItem(
+            () -> new InfiniteSnowballItem(
                     new Item.Properties()
-                            .stacksTo(64)
+                            .stacksTo(1)
                             .component(DataComponents.ENCHANTMENT_GLINT_OVERRIDE, true)
             )
     );
 
-        // Repelling Snowball - Survival
+    // Repelling Snowball - Survival
     public static final DeferredItem<SnowballItem> REPELLING_SNOWBALL = ITEMS.register(
             "repelling_snowball",
             () -> new SnowballItem(
@@ -119,16 +120,15 @@ public final class ModItems {
             )
     );
 
-    // Repelling Snowball - Creative
-    public static final DeferredItem<SnowballItem> CREATIVE_REPELLING_SNOWBALL = ITEMS.register(
+    // Repelling Snowball - Infinite
+    public static final DeferredItem<InfiniteSnowballItem> CREATIVE_REPELLING_SNOWBALL = ITEMS.register(
             "creative_repelling_snowball",
-            () -> new SnowballItem(
+            () -> new InfiniteSnowballItem(
                     new Item.Properties()
-                            .stacksTo(64)
+                            .stacksTo(1)
                             .component(DataComponents.ENCHANTMENT_GLINT_OVERRIDE, true)
             )
     );
-
 
     private ModItems() {
     }
